@@ -12,11 +12,6 @@ body {
     margin-bottom: -50px;
 }
 
-#footer,
-.push {
-    height: 50px;
-}
-
 /* ----- CUSTOM PAGINATION ----- */
 .page-item.active .page-link {
     columns: #fff;
