@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+<!-- NAVBAR CONTENT -->
+{% block navbar-content %}
+<i style="color: yellowgreen;" class="fas fa-user-alt txt-sm3"></i>&nbsp;&nbsp; <span class="txt-sm3">Employee List</span>
+{% endblock navbar-content %}
+
+<!-- PAGE CONTENT -->
+{% block content %} 
+<div class="container">
+
+    <!-- Small devices mode -->
+    <div class="input-group input-group-sm">
+        <a class="btn btn-success btn-sm group-btn-sm" style="width: 40px;" title="Add employee" data-bs-toggle="modal" data-bs-target="#addModal">
+            <i class="fas fa-plus"></i>
+        </a>
+        <input class="form-control group-btn-sm" type="search" id="search-sm" placeholder="Search.." aria-label="Search">
+        <a href="{% url 'home' %}" style="width: 40px;" class="btn btn-secondary btn-sm group-btn-sm" title="Refresh"><i class="fas fa-sync-alt"></i></a>
+    </div>
+    <br>
+    <table class="table table-bordered" id="example" style="text-align: center; font-size: 15px;">
+        <thead class="table-success">
+            <tr>
+                <th style="width: 7%;">ID</th>
+                <th style="width: 20%;">Name</th>
+                <th style="width: 15%;">Email</th>
+                <th style="width: 15%;">Occupation</th>
+                <th style="width: 10%;">Salary</th>
+                <th style="width: 8%;">Gender</th>
+                <th style="width: 15%;">Registered</th>
+                <th class="action-color" style="width: 5%;">Edit</th>
+                <th class="action-color" style="width: 5%;">Delete</th>
+            </tr>
+        </thead>
+        <!-- Get data from Backend -->
+        {% for employee in employees %}
+        <tr>
+            <td id="id">{{ employee.id }}</td>
+            <td id="top-table" label="Name">{{ employee.name }}</td>
+            <td id="responsive-table" label="Email">{{ employee.email }}</td>
+            <td id="responsive-table" label="Occupation">{{ employee.occupation }}</td>
+            <td id="responsive-table" label="Salary">{{ employee.salary }}</td>
+            <td id="responsive-table" label="Gender">{{ employee.gender }}</td>
+            <td id="responsive-table" label="Registered">{{ employee.created_at | date:'m/d/Y (H:i)' }}</td>
+            <td>
+                <a class="btn btn-success text-center txt-sm" title="Edit employee" data-bs-toggle="modal" data-bs-target="#editModal{{ employee.pk }}">
+                    <i class="fas fa-pen"></i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-secondary text-center txt-sm up-btn" title="Delete employee" data-bs-toggle="modal" data-bs-target="#deleteModal{{ employee.pk }}">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </td>
+        </tr>
+
+        <!-- INCLUDE PAGE  -->
+        {% include 'edit.html' %}
+        {% include 'modals/delete.html' %}
+
+        {% endfor %}
+    </table>
+    
+</div> <!-- END // CONTAINER -->
+
+<br><br><br><br>
+{% endblock content %}

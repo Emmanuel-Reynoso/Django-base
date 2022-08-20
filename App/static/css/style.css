@@ -1,0 +1,326 @@
+/* ----- START CONFIGURATION ----- */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* ----- FOOTER ----- */
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#footer,
+.push {
+    height: 50px;
+}
+
+/* ----- CUSTOM PAGINATION ----- */
+.page-item.active .page-link {
+    columns: #fff;
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.pagination > li > a {
+    background-color: #fff;
+    color: #6c757d;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > span > a:focus,
+.pagination > span > a:hover {
+    color: #111;
+    background-color: #d3d3d3;
+    border: 1px solid #6c757d;
+    box-shadow: none;
+}
+
+/* ----- DATATABLES ----- */
+/* Pagination */
+.dataTables_paginate {
+    margin-top: -30px !important;
+}
+
+/* Input search */
+.dataTables_filter {
+    display: none;
+}
+
+/* Show entries */
+.dataTables_length {
+    float: right !important;
+    margin-top: 10px !important;
+}
+
+/* Group buttons */
+.dt-buttons {
+    margin-bottom: 10px !important;
+}
+
+.buttons-print, .buttons-excel, .buttons-copy, .buttons-pdf {
+    background-color: #d1e7dd;
+    color: rgb(53, 49, 49);
+    width: 50px;
+}
+
+/* Thead datatable */
+thead input {
+    width: 100%;
+    text-align: center;
+}
+
+.action-color {
+    color: transparent;
+}
+
+th:nth-child(8), th:nth-child(9) {
+    border: none;
+}
+
+/* ----- LOGIN ----- */
+#card-login {
+    width: 450px;
+}
+
+.login-border {
+    border-top: .4rem solid #198754;
+    border-bottom: .4rem solid #198754;
+    border-radius: 10px;
+}
+
+#btn-enter {
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#login-globe {
+    color: #d3d3d3; 
+    font-size: 120px;
+}
+
+/* ----- OTHERS ----- */
+/* Labels of input */
+.side-label {
+    width: 45px;
+}
+
+.btn-modal {
+    width: 60px;
+}
+
+.group-btn-sm { /* --> small devices mode */
+    display: none;
+}
+
+/* ----- SWEETALERT CUSTOMIZED ----- */
+.swal-modal {
+    background-color: rgba(0, 0, 0, 0.651);
+    color: #fff;
+}
+
+.swal-title {
+    color: #fff;
+    font-size: 20px;
+}
+
+.swal-text {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Button */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 5px;
+    background-color: #198754;
+    font-size: 12px;
+    border: 1px solid #198754;
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #198754;
+}
+
+/* Icons */
+.swal-icon--success__hide-corners {
+    background: none !important;
+}
+
+.swal-icon--success:before,
+.swal-icon--success:after {
+    background: none !important;
+}
+
+/* ----- BOOTSRAP GREEN THEME ----- */
+.form-control:focus {
+    border-color: green;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Checkbox green theme - show/hide password */
+.form-check-input:checked {
+    background-color: #8abaae;
+    border: green !important;
+    box-shadow: 0 0 8px rgba(1, 152, 117, 0.4) !important;
+}
+
+.form-check-input {
+    border: green !important;
+    box-shadow: 0 0 8px rgba(1, 152, 117, 0.4) !important;
+}
+
+.form-switch .form-check-input:focus {
+    background-image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='grey'/%3e%3c/svg%3e";
+}
+
+/* ----- RESPONSIVE - MEDIUM Devices 1199px ----- */
+@media(max-width: 1199px){
+    /* Responsive Table */
+    .table-head {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        border: 1px solid #111;
+        border-radius: 3px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 35%;
+        position: relative;
+        border: 1px solid transparent;
+    }
+
+    .table td::before {
+        content: attr(label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .table > thead > tr:first-child {
+        display: none;
+        margin-top: 5px;
+    }
+
+    .table-success {
+        display: none;
+    }
+
+    /* Responsive Border */
+    #responsive-border {
+        border: 1px solid #a9a9a9;
+    }
+
+    /* First cell - change color */
+    #top-table {
+        background-color: #111;
+        color: #fff;
+    }
+
+    #id {
+        display: none;
+    }
+}
+
+/* ----- RESPONSIVE - SMALL Devices 575px ----- */
+@media(max-width: 575px){
+    /* LOGIN */
+    #card-login {
+        width: 95%;
+    }
+
+    #btn-enter {
+        font-size: 14px;
+    }
+
+    #login-globe {
+        font-size: 90px;
+    }
+
+    /* text-sm Levels */
+    .txt-sm {
+        font-size: 12px;
+    }
+
+    .txt-sm2 {
+        font-size: 14px;
+    }
+
+    .txt-sm3 {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    #footer {
+        font-size: 13px;
+    }
+
+    /* Group buttons Navbar */
+    .group-btn-sm { /* --> small devices mode */
+        display: inline;
+        margin-top: 25px;
+    }
+
+    .group-btn { /* --> large devices mode */
+        display: none;
+    }
+
+    .logout-sm {
+        display: inline;
+        margin-right: -10p;
+    }
+
+    /* btn delete margin from edit btn */
+    .up-btn {
+        margin-top: -10px;
+    }
+
+    /* ----- DataTables ----- */
+    /* Show entries - data per page */
+    .dataTables_length {
+        float: left !important;
+        margin-top: -5px !important;
+        margin-bottom: 15px !important;
+        font-size: 12px;
+    }
+
+    /* Pagination */
+    .dataTables_paginate {
+        margin-top: 0px !important;
+        float: left !important;
+        font-size: 12px;
+    }
+
+    /* Footer - datatables */
+    .dataTables_info {
+        display: none;
+    }
+
+    /* no matching found to center of screen */
+    .dataTables_empty {
+        text-align: center !important;
+        margin-left: -30% !important;
+    }
+}
