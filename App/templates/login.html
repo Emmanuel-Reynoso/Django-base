@@ -16,13 +16,16 @@
 <div class="container mt-5" id="card-login">
     <div class="card p-3 login-border">
         <span class="text-center mt-3 text-pulse txt-sm2"><strong>RESTRICTED ACCESS</strong></span>
+        <span class="text-center mt-3 txt-sm2"><small>Guest username: oscar7845</small></span>
+        <span class="text-center mt-3 txt-sm2"><small>Guest password: django123</small></span>
+
         <form method="POST" action="/login_user" autocomplete="off"> 
             {% csrf_token %}
             <div class="input-group mb-2 mt-4">
-                <input type="text" class="form-control txt-sm2" name="username" placeholder="Username">
+                <input type="text" class="form-control txt-sm2" name="username" placeholder="Username.. Guest username: oscar7845">
             </div>
             <div class="input-group mb-2">
-                <input type="password" class="form-control txt-sm2" id="password" name="password" placeholder="Password">
+                <input type="password" class="form-control txt-sm2" id="password" name="password" placeholder="Password.. Guest password: django123">
             </div>
             <div class="form-check form-switch">
                 <input class="form-check-input txt-sm2" onclick="myFunction()" type="checkbox" style="float: right;">
