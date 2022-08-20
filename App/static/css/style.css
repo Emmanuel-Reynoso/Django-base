@@ -12,6 +12,12 @@ body {
     margin-bottom: -50px;
 }
 
+.stick {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
 #footer,
 .push {
     height: 50px;
