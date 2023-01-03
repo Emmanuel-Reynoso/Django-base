@@ -16,8 +16,12 @@ Every part of this project is sample code which shows how to do the folllowing:
 
 ## Check out each feature here
 ![data_11](https://user-images.githubusercontent.com/98499720/210342245-467b5577-00ef-4211-b061-4fc7d821f5a8.gif)
+
 ![data_12](https://user-images.githubusercontent.com/98499720/210342259-d6d514bb-8d77-4623-b2e9-2eb6a7aa24e4.gif)
+
 ![data_13](https://user-images.githubusercontent.com/98499720/210342267-d1e33235-aaa1-40c9-9a01-f42831b8fbd9.gif)
+
+![data_14](https://user-images.githubusercontent.com/98499720/210342710-8efad14a-e28f-4fe3-9873-f5a04720893f.gif)
 
 
 ## How you can install this project and test it
