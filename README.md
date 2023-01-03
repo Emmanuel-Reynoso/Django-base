@@ -22,3 +22,5 @@ gif
 1. clone this project
 2. install python (django)
 3. run: python manage.py runserver
+
+Useful documentation: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
