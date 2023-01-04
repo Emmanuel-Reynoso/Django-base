@@ -1,4 +1,4 @@
-# Python (Django) with Bootstrap 5 and Datatables
+# Python (Django) with Bootstrap 5 and Datatable
 
 ## A fully functional Datatable project written in python (django) designed to organize a company's employees according to different criteria.
 ### Includes Django admin dashboard
