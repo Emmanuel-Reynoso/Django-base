@@ -31,18 +31,17 @@ Every part of this project is sample code which shows how to do the folllowing:
 
 Useful documentation: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 
+Database
+https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+Password validation
+https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
-# Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
+Internationalization
+https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-# Internationalization
-# https://docs.djangoproject.com/en/4.0/topics/i18n/
+Static files (CSS, JavaScript, Images)
+https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+Default primary key field type
+https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
